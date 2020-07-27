@@ -1,0 +1,187 @@
+// ----- Variables ----- //
+
+$mainCl: #5d8ea8; 
+$mainClLight: #4989a8; 
+$mainClDark: #3a4750;
+$baseTextColor: #1d1d1d; 
+
+// ----- Mixins ----- //
+@mixin flex($align, $justify) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder { @content; }
+    &:-moz-placeholder           { @content; }
+    &::-moz-placeholder          { @content; }
+    &:-ms-input-placeholder      { @content; }  
+}
+
+/* ----- Specify ----- */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button, button:active, button:focus, button:visited {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+ul, li {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: block;
+}
+
+.section-title {
+    font-size: 35px;
+    color: $baseTextColor;
+    font-weight: 400;
+    margin-bottom: 38px;
+}
+
+.base-input {
+    background-color: #ccc;
+    display: inline-block;
+    color: #837373;
+    padding: 10px 28px 9px;
+    border-radius: 30px;
+    transition: all .4s ease;
+    &:focus {
+        transition: all .4s ease;
+        background-color: darken(#ccc, 10%);
+    }
+    @include placeholder {
+        color: #bdbdbd;
+    }
+}
+
+.container {
+    max-width: 968px;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+
+.owl-nav {
+    position: absolute;
+    bottom: 74px;
+    left: 50%;
+    width: 960px;
+    margin-left: -480px;
+}
+
+.btn {
+    border-radius: 30px;
+    padding: 10px 28px 9px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.main-btn {
+    background-color: $mainCl;
+    color: #fff;
+    transition: .3s all linear;
+    padding: 14px 17px;
+    border-radius: 3px;
+    &:hover {
+        transition: .3s all linear;
+        background-color: lighten($mainCl, 5%);
+    }
+    &:active {
+        transition: .3s all linear;
+        background-color: darken($mainCl, 5%);
+        position: relative;
+        top: 1px;
+        box-shadow: 0px 5px 11px 0px rgba(65, 65, 65, .3);
+    }
+}
+
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+input, input:focus, input:hover, input:active {
+    
+    outline: none;
+}
+
+.base-link {
+    position: relative;
+    z-index: 5;
+    padding: 5px;
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 0px;
+        bottom: -1px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.15);
+        transition: all .2s ease;
+        z-index: -1;
+        border-radius: 5px;
+    }
+    &:hover {
+        transition: all .2s ease;
+        color: #fff;
+    }
+    &:hover::after {
+        transition: all .2s ease;
+        height: 100%;
+    }
+    &_act {
+        transition: all .2s ease;
+        height: 100%;
+    }
+}
+
+.btn-sale {
+    line-height: 46px;
+    width: 46px;
+    height: 46px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: $mainClLight;
+}
+
+.btn-sale_check {
+    border: 2px solid #b0bdc4;
+    color: #b0bdc4;
+    background-color: transparent;
+    &:active, &:focus, &:hover {
+       border: 2px solid #b0bdc4; 
+    }
+}
+
+
+.d-n {
+    display: none;
+}
+
+.d-b {
+    display: block;
+}
+
+
+
+
+

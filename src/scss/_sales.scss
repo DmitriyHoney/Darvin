@@ -1,0 +1,61 @@
+.sales-section {
+    background-color: #e4e8eb;
+    padding: 75px 0px;
+}
+
+
+.sales {
+    &-list {
+        @include flex(stretch, space-between);
+        flex-wrap: wrap;
+    }
+    &-card {
+        display: inline-block;
+        border-radius: 5px;
+        padding: 20px 0px;
+        min-width: 300px;
+        width: 30%;
+        text-align: center;
+        text-decoration: none;
+        background-color: #fff;
+        box-shadow: 0px 0px 3px #ccc;
+        position: relative;
+        margin-bottom: 15px;
+        &__info {
+            padding: 0px 20px;
+            margin-top: 15px;
+            text-align: left;
+        }
+        &__image {
+            border-bottom: 1px solid #ccc;
+            min-height: 250px;
+            width: 60%;
+            margin: 0px auto;
+        }
+        &__name {
+            display: block;
+            color: #3d728e;
+            font-size: 0.933em;
+            min-height: 48px;
+            &::after {
+                content: '';
+                display: inline-block;
+            }
+        }
+        &__price {
+                display: block;
+                margin-top: 25px;
+                font-size: 17px;
+                text-transform: uppercase;
+                color: #494949;
+                font-weight: 700;
+        }
+    }
+}
+
+.btn-sale_pos {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 55555;
+}

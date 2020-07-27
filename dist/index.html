@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GoogleFont - OpenSans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Veniam</title>
+</head>
+<body>
+    <!-- modal -->
+    <div class="modal">
+        <div class="contact-form">
+            <span class="modal-close">
+                &times;
+            </span>
+            <form action="#">
+                <h4 class="contact-form__title">
+                    Связаться с нами
+                </h4>
+                <input class="main-input" type="text" name="name" placeholder="Ваше имя">
+                <input class="main-input" type="tel" name="phone" placeholder="+7">
+                <input class="main-input" type="email" name="email" placeholder="Электронная почта">
+                <textarea class="contact-textarea" name="message" placeholder="Текст сообщения"></textarea>
+                <div class="policy">
+                    <label for="policy-input">
+                        <span>
+                            Согласен с 
+                        </span>
+                        <a href="#">
+                            политикой конфиденциальности
+                        </a>
+                    </label>
+                    <input type="checkbox" id="policy-input" name="policy">
+                </div>
+                <button type="submit" class="main-btn contact-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <!-- END modal -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="navigation-top">
+                <a href="/" class="navigation-top__logo">
+                    <img src="img/header/logo.png" alt="logotype">
+                </a>
+                <div class="navigation-top__contact">
+                    <div class="navigation-top__icon">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="navigation-top__info">
+                        <p>
+                            С 9:00 до 18:00
+                        </p>
+                        <a href="tel:+70000000000">
+                            +7 (000) 000-00-00
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="menu-btn">
+                    <span></span>
+                </a>
+                <div class="navigation-top__callback">
+                    <button class="main-btn btn-callback" type="button">
+                        Перезвоните мне
+                    </button>
+                    <button class="main-btn" type="button">
+                        Оставить заявку
+                    </button>
+                </div>
+            </div>
+        </div>
+        <nav class="navigation-bottom navigation-bottom_sm">
+            <div class="container">
+                <ul class="navigation-list navigation-list_sm">
+                    <li class="navigation-list__item">
+                        <a href="#" class="base-link ">
+                            О компании
+                        </a>
+                    </li>
+                    <li class="navigation-list__item navigation-list__item_children">
+                        <a href="#" class="base-link">
+                            Каталог
+                        </a>
+                        <ul class="navigation-list__ctgry">
+                            <li class="navigation-list__close">
+                                <i class="fa fa-angle-left"></i>
+                            </li>
+                            <li><a href="#">Миссия</a></li>
+                            <li><a href="#">Команда</a></li>
+                            <li><a href="#">История</a></li>
+                        </ul>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#" class="base-link">
+                            Доставка и оплата
+                        </a>
+                    </li>
+                    <li class="navigation-list__item navigation-list__item_children">
+                        <a href="#" class="base-link">
+                            Отзывы
+                        </a>
+                        <ul class="navigation-list__ctgry">
+                            <li class="navigation-list__close">
+                                <i class="fa fa-angle-left"></i>
+                            </li>
+                            <li><a href="#">asdasdasd</a></li>
+                            <li><a href="#">qweqweqwe</a></li>
+                            <li><a href="#">asdasdasd</a></li>
+                        </ul>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#" class="base-link">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#" class="base-link">
+                            Статьи
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#" class="base-link">
+                            Фотогаллерея
+                        </a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="#" class="base-link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- ./header -->
+    <section id="offer" class="offer">
+        <div class="owl-one owl-carousel owl-theme">
+            <div class="content" style="background-image: url('../img/offer/1.jpg');"> 
+                <div class="container">
+                    <h2 class="offer-title">
+                       Найдите новую одежду 
+                    </h2>
+                    <p class="offer-intro">
+                        Обновите ваш гардероб к новому сезону!
+                    </p>
+                </div>
+            </div>
+            <div class="content" style="background-image: url('../img/offer/1.jpg');"> 
+                <div class="container">
+                    <h2 class="offer-title">
+                       Найдите новую одежду 2 
+                    </h2>
+                    <p class="offer-intro">
+                        Обновите ваш гардероб к новому сезону!
+                    </p>
+                </div>
+            </div>
+            <div class="content" style="background-image: url('../img/offer/1.jpg');"> 
+                <div class="container">
+                    <h2 class="offer-title">
+                       Найдите новую одежду  3
+                    </h2>
+                    <p class="offer-intro">
+                        Обновите ваш гардероб к новому сезону!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="pagination-slider"></div>
+    </section>
+    <!-- ./offer -->
+    <section id="main-section" class="main-section">
+        <div class="container">
+            <div class="main-wrap">
+                <div class="main-info">
+                    <h1 class="main-title">
+                        Заголовок H1
+                    </h1>
+                    <div class="main-image main-image_sm">
+                        <img src="img/main/1.png" alt="main">
+                    </div>
+                    <p class="main-descr">
+                        Интернет-магазин одежды Stylecloth – это доступные цены, широкий, регулярно обновляемый ассортимент. В онлайн-каталоге Stylecloth представлено около 7000 ведущих брендов женской, мужской и детской одежды и обуви, электроники, книжной продукции, ювелирных изделий, игрушек и т.д. Для удобства пользования онлайн-каталог поделен на разделы, все товары можно сортировать по ряду критериев: цена, материал изготовления, сезонность, бренд.
+                    </p>
+                    <p class="main-descr">
+                        Интернет-магазин Stylecloth регулярно проводит масштабные распродажи, в рамках которых купить одежду и обувь становится еще реальнее. Чтобы быть в курсе предстоящих скидок или появления в ассортименте новых моделей одежды от любимых брендов, достаточно подписаться на email-рассылку магазина. Дополнительные выгодные условия действуют для постоянных покупателей Wildberries – персональная скидка, зависящая от процента выкупа вещей. 
+                    </p>
+                </div>
+                <div class="main-image">
+                    <img src="img/main/1.png" alt="main">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /.main-section -->
+    <section id="sales-section" class="sales-section">
+        <div class="container">
+            <h2 class="section-title">
+                Хиты продаж
+            </h2>
+            <div class="sales-list owl-two owl-carousel owl-theme">
+                <a href="#" class="sales-card">
+                    <div class="sales-card__image">
+                        <img src="img/sales/product-1.png" alt="product">
+                    </div>
+                    <div class="sales-card__info">
+                        <span class="sales-card__name">
+                            Плотная рубашка из эластичной джинсовой ткани
+                        </span>
+                        <span class="sales-card__price">
+                            5 999 &#8381;
+                        </span>
+                    </div>
+                    <span class="btn-sale btn-sale_buy btn-sale_pos">
+                        <i class="fa fa-shopping-basket "></i>
+                    </span>
+                </a>
+                <a href="#" class="sales-card">
+                    <div class="sales-card__image">
+                        <img src="img/sales/product-2.png" alt="product">
+                    </div>
+                    <div class="sales-card__info">
+                        <span class="sales-card__name">
+                            Футболка с заклепками
+                        </span>
+                        <span class="sales-card__price">
+                            5 999 &#8381;
+                        </span>
+                    </div>
+                    <span class="btn-sale btn-sale_check btn-sale_pos btn-sale_check2">
+                        <i class="fa fa-check "></i>
+                    </span>
+                </a>
+                <a href="#" class="sales-card">
+                    <div class="sales-card__image">
+                        <img src="img/sales/product-3.png" alt="product">
+                    </div>
+                    <div class="sales-card__info">
+                        <span class="sales-card__name">
+                            Футболка с эффектом разрывов
+                        </span>
+                        <span class="sales-card__price">
+                            5 999 &#8381;
+                        </span>
+                    </div>
+                    <span class="btn-sale btn-sale_buy btn-sale_pos">
+                        <i class="fa fa-shopping-basket "></i>
+                    </span>
+                </a>
+                <a href="#" class="sales-card">
+                    <div class="sales-card__image">
+                        <img src="img/sales/product-1.png" alt="product">
+                    </div>
+                    <div class="sales-card__info">
+                        <span class="sales-card__name">
+                            Плотная рубашка из эластичной джинсовой ткани
+                        </span>
+                        <span class="sales-card__price">
+                            5 999 &#8381;
+                        </span>
+                    </div>
+                    <span class="btn-sale btn-sale_buy btn-sale_pos ">
+                        <i class="fa fa-shopping-basket "></i>
+                    </span>
+                </a>
+                <a href="#" class="sales-card">
+                    <div class="sales-card__image">
+                        <img src="img/sales/product-2.png" alt="product">
+                    </div>
+                    <div class="sales-card__info">
+                        <span class="sales-card__name">
+                            Футболка с заклепками
+                        </span>
+                        <span class="sales-card__price">
+                            5 999 &#8381;
+                        </span>
+                    </div>
+                    <span class="btn-sale btn-sale_check btn-sale_pos">
+                        <i class="fa fa-check "></i>
+                    </span>
+                </a>
+                <a href="#" class="sales-card">
+                    <div class="sales-card__image">
+                        <img src="img/sales/product-3.png" alt="product">
+                    </div>
+                    <div class="sales-card__info">
+                        <span class="sales-card__name">
+                            Футболка с эффектом разрывов
+                        </span>
+                        <span class="sales-card__price">
+                            5 999 &#8381;
+                        </span>
+                    </div>
+                    <span class="btn-sale btn-sale_buy btn-sale_pos">
+                        <i class="fa fa-shopping-basket "></i>
+                    </span>
+                </a>
+                <a href="#" class="sales-card">
+                    <div class="sales-card__image">
+                        <img src="img/sales/product-1.png" alt="product">
+                    </div>
+                    <div class="sales-card__info">
+                        <span class="sales-card__name">
+                            Плотная рубашка из эластичной джинсовой ткани
+                        </span>
+                        <span class="sales-card__price">
+                            5 999 &#8381;
+                        </span>
+                    </div>
+                    <span class="btn-sale btn-sale_buy btn-sale_pos">
+                        <i class="fa fa-shopping-basket "></i>
+                    </span>
+                </a>
+                <a href="#" class="sales-card">
+                    <div class="sales-card__image">
+                        <img src="img/sales/product-2.png" alt="product">
+                    </div>
+                    <div class="sales-card__info">
+                        <span class="sales-card__name">
+                            Футболка с заклепками
+                        </span>
+                        <span class="sales-card__price">
+                            5 999 &#8381;
+                        </span>
+                    </div>
+                    <span class="btn-sale btn-sale_check btn-sale_pos">
+                        <i class="fa fa-check "></i>
+                    </span>
+                </a>
+                <a href="#" class="sales-card">
+                    <div class="sales-card__image">
+                        <img src="img/sales/product-3.png" alt="product">
+                    </div>
+                    <div class="sales-card__info">
+                        <span class="sales-card__name">
+                            Футболка с эффектом разрывов
+                        </span>
+                        <span class="sales-card__price">
+                            5 999 &#8381;
+                        </span>
+                    </div>
+                    <span class="btn-sale btn-sale_buy btn-sale_pos">
+                        <i class="fa fa-shopping-basket "></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- /.sales-section -->
+    <section id="contact" class="contact">
+        <div class="contact-map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5024ee4b46f15776293d63ce6b234ecb9014bc6e0d9cb5663677ec3c4154a07b&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=false"></script>
+        </div>
+        <div class="container">
+            <div class="contact-form">
+                <form action="#">
+                    <h4 class="contact-form__title">
+                        Связаться с нами
+                    </h4>
+                    <input class="main-input" type="text" name="name" placeholder="Ваше имя">
+                    <input class="main-input" type="tel" name="phone" placeholder="+7">
+                    <input class="main-input" type="email" name="email" placeholder="Электронная почта">
+                    <textarea class="contact-textarea" name="message" placeholder="Текст сообщения"></textarea>
+                    <div class="policy">
+                        <label>
+                            <span>
+                                Согласен с 
+                            </span>
+                            <a href="#">
+                                политикой конфиденциальности
+                            </a>
+                        </label>
+                        <input type="checkbox" name="policy">
+                    </div>
+                    <button type="submit" class="main-btn contact-btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Jquery -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- owl.carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Custom Script -->
+    <script src="js/script.min.js"></script>
+</body>
+</html>

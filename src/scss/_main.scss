@@ -1,0 +1,28 @@
+.main-section {
+    padding: 62px 0px 95px;
+    color: $baseTextColor;
+}
+
+.main {
+    &-wrap {
+        @include flex(center, space-between)
+    }
+    &-info {
+        width: 48%;
+    }
+    &-image {
+        width: 45%;
+    }
+    &-title {
+        font-size: 50px;
+        font-weight: 300;
+    }
+    &-descr {
+        margin-top: 20px;
+        line-height: 20px;
+    }
+}
+
+.main-image_sm {
+    display: none;
+}

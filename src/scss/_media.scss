@@ -1,0 +1,258 @@
+
+/* 768px - 991px  Medium (col-md)*/ 
+@media screen and (max-width: 991px) {
+	.container {
+	    max-width: 720px;
+	}
+	.pagination-slider {
+	    width: 460px;
+	}
+	.owl-nav {
+   		max-width: 300px;
+   		margin-left: -360px;
+	}
+   .navigation-list__item a {
+		font-size: 13px;
+	}
+	.navigation-top__callback {
+		display: flex;
+    	flex-direction: column;
+    	& button {
+    		margin-bottom: 5px;
+    		&:last-child {
+    			margin-bottom: 0px;
+    		}
+    	}
+	}
+	.main {
+		&-wrap {
+			flex-direction: column;
+		}
+		&-info {
+			width: 100%;
+		}
+		&-image {
+			width: 100%;
+	    	margin-top: 36px;
+	    	text-align: center;
+		}
+	}
+	.main-image {
+		display: none;
+	}
+	.main-image_sm {
+		display: block;
+		margin: 20px auto 25px;
+	}
+	.sales-list .owl-item {
+		text-align: center;
+	}
+}
+
+.navigation-list__close {
+    display: none;
+    color: #fff;
+    font-size: 25px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    left: 15px;
+    position: absolute;
+    top: 15px;
+}
+
+/* 576px - 767px Small (col-sm)*/
+@media screen and (max-width: 767px) {
+	.pagination-slider {
+	    width: 300px;
+	}
+	.navigation-list__close {
+		display: block;
+	}
+	.base-link {
+	    position: relative;
+	    z-index: 5;
+	    padding: 0px;
+	    &::after {
+	        content: '';
+	        position: absolute;
+	        display: block;
+	        height: 0px;
+	        bottom: 0px;
+	        width: 0;
+	        background-color: none;
+	    }
+	    &:hover {
+	        transition: all .2s ease;
+	        color: #fff;
+	    }
+	    &:hover::after {
+	        transition: all .2s ease;
+	        height: 0;
+	    }
+	    &_act {
+	        transition: all .2s ease;
+	        height: 0;
+	    }
+	}
+    .container {
+	    max-width: 540px;
+	}
+	.owl-nav {
+   		max-width: 300px;
+   		margin-left: -270px;
+	}
+	.header {
+		position: relative;
+	}
+	.navigation {
+		&-top {
+			flex-wrap: wrap;
+			&__contact {
+				display: none;
+			}
+			&__logo {
+				width: 40%;
+			}
+			&__callback {
+			}
+		}
+		&-bottom {
+			display: none;
+			& .navigation-list__item_children .navigation-list__ctgry {
+				display: none;
+				&_act {
+					display: none;
+				}
+			}
+		}
+		&-bottom_sm {
+			opacity: 0;
+			display: block;
+			background-color: rgba(58, 71, 80, .9);
+			padding: 15px 0px;
+			position: absolute;
+			transition: all .3s ease;
+			width: 100%;
+			left: 0px;
+			right: 0px;
+			z-index: 55;
+			& .navigation-list__ctgry {
+				opacity: 0;
+				transition: all .8s ease;
+				position: absolute;
+				display: block;
+			}
+			& .navigation-list_sm {
+				flex-direction: column;
+
+				& .navigation-list__item_children {
+					padding-right: 0;
+					&::after {
+						display: none;
+					}
+					& a::after {
+						content: "\f107";
+					    font: normal normal normal 18px/1 FontAwesome;
+					    color: #fff;
+					    position: absolute;
+				        right: -25px;
+    					top: 9px;
+					    display: block;
+					    padding: 0 5px;
+					    width: 15px;
+					    cursor: pointer;
+					}
+					position: inherit;
+					& .navigation-list__ctgry_act {
+						display: flex;
+					    opacity: 1;
+					    transition: all .8s ease;
+					    position: absolute;
+					    width: 100%;
+					    background-color: #3a4750;
+					    height: 100%;
+					    top: 0;
+					    justify-content: center;
+					    flex-direction: column;
+					    align-items: center;
+					    & li {
+					    	border-top: none;
+					    }
+					}
+				}
+				& li a {
+					&::after {
+					    
+					}
+					display: inline-block;
+					padding: 10px 0px;
+				}
+			}
+		}
+		&-bottom_sm_act {
+			transition: all .8s ease;
+			opacity: 1;
+		}
+	}
+	.menu-btn {
+		display: block;
+		width: 10%;
+		order: 3;
+	}
+}
+
+
+/* 435px - 575px  (col)*/
+@media screen and (max-width: 575px) {
+    .offer {
+    	display: none;
+    }
+}
+
+/* 435px - 480px  (col)*/
+@media screen and (max-width: 480px) {
+	.container {
+	    max-width: 100%;
+	}
+	.owl-nav {
+   		max-width: 300px;
+	}
+	.contact {
+		min-height: 830px;
+		&-form {
+			position: absolute;
+		    bottom: 0;
+		    max-width: 100%;
+		    margin-left: -15px;
+		}
+	}
+}
+
+
+/* 320px - 435px  (col)*/
+@media screen and (max-width: 450px) {
+    .navigation {
+		&-top {
+			flex-wrap: wrap;
+			&__contact {
+				display: none;
+			}
+			&__logo {
+				width: 75%;
+			}
+			&__callback {
+				margin: 15px auto 0;
+				order: 3;
+			}
+		}
+	}
+	.menu-btn {
+		width: 50px;
+		order: 2;
+	}
+}
+
+/*
+
+*/
